@@ -1,0 +1,38 @@
+<div ng-controller="mainController">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Assignment</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Pending Requests</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" ng-click="user_logout()"><span></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <h2>Pending Requests</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Email</th>
+        <th>Company</th>
+        <th>Approve</th>
+        <th>Reject</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="dat in table_data">
+        <td>{{dat.name}}</td>
+        <td>{{dat.email}}</td>
+        <td>{{dat.company}}</td>
+        <td><button type="button" class="btn btn-success" ng-click="submit(dat, action='approved')">Approve</button></td>
+        <td><button type="button" class="btn btn-danger" ng-click="submit(dat, action='rejected')">Reject</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

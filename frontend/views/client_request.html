@@ -1,0 +1,28 @@
+<div class="container" ng-app="myApp" ng-controller="clientRequestController">
+  <h2>Client Request Form</h2>
+  <form class="form-horizontal" style="padding-top:5%;">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">Full Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" placeholder="Enter Full Name" name="name" style="width: 40%" ng-model="model_data.name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email ID:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" style="width: 40%" ng-model="model_data.email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="company">Company Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="company" placeholder="Enter Company Name" name="company" style="width: 40%" ng-model="model_data.company">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default" ng-click="login_request()">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
