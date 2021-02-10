@@ -15,4 +15,8 @@
 6. Navigate back to the path where manage.py present and run the below command.
   Command: python manage.py runserver
 
-7. In browser type localhost:9003 to check the application.
+7. Please create the superuser by below command
+  Command: python manage.py createsuperuser
+
+8. In browser type localhost:9003 to check the application.
+
